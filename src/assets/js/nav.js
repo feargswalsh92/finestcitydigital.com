@@ -70,14 +70,14 @@ dropdownElements.forEach(element => {
             toggleDropdown(element);
         }
 
-        // Pressing Escape will remove the active class from the dropdown. The stopPropagation above will stop the hamburger menu from closing
+        // Pressing Escape will remove the active class from the dropdown
         if (event.key === "Escape") {
             escapePressed = true;
             toggleDropdown(element);
         }
     });
 
-    // Handles dropdown menus on mobile - the matching media query (max-width: 63.9375rem) is necessary so that clicking the dropdown button on desktop does not add the active class and thus interfere with the hover state
+    // Handles dropdown menus on mobile with a media query check
     const maxWidthMediaQuery = window.matchMedia("(max-width: 63.9375rem)");
     if (maxWidthMediaQuery.matches) {
         element.addEventListener("click", () => toggleDropdown(element));
@@ -99,4 +99,19 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && hamburgerMenu.classList.contains("cs-active")) {
         toggleMenu();
     }
+});
+
+// This script adds a class to the body after scrolling 100px
+// Used for triggering on-scroll animations with the navbar
+let scrollTimeout;
+document.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        const scroll = document.documentElement.scrollTop;
+        if (scroll >= 100) {
+            bodyElement.classList.add('scroll');
+        } else {
+            bodyElement.classList.remove('scroll');
+        }
+    }, 50);
 });
