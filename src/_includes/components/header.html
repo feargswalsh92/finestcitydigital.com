@@ -6,7 +6,12 @@
         <!--Nav Logo-->
         <!--Logo is turned white in the css with a filter on dark mode-->
         <a href="" class="cs-logo" aria-label="back to home">
-            <img src="../../assets/images/horizontal-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="../../assets/images/horizontal-logo.png">
+                <source media="(min-width: 601px)" srcset="../assets/images/horizontal-logo-desktop.png">
+                <img decoding="async" src="../asses/images/horizontal-logo.png" alt="finest-city-digital-logo" width="2250" height="1500" aria-hidden="true">
+        </picture>
+        <a href="" class="cs-logo" aria-label="back to home">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
