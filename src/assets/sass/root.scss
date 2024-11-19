@@ -21,6 +21,7 @@
         /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1rem;
+        --smallBodyFontSize: 1rem;
 
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -55,6 +56,16 @@
         max-width: 40.625rem;
         width: 100%;
         font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        text-align: inherit;
+    }
+
+    .cs-text-small {
+        margin: 0;
+        max-width: 40.625rem;
+        width: 100%;
+        font-size: var(--smallBodyFontSize);
         line-height: 1.5em;
         color: var(--bodyTextColor);
         text-align: inherit;
@@ -3453,6 +3464,177 @@
     }
 }
 
+
+/*-- -------------------------- -->
+<---       Content Group        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-content-1792 {
+        width: 100%;
+        max-width: calc(1280/16 * 1rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6.5vw, 4rem);
+
+        .cs-content {
+            /* set text align to center if content needs to be center aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .cs-flex-wrapper {
+            max-width: calc(600/16 * 1rem);
+            /* lets the div's contents act as though it doesn't exist and can be children of the next surrounding parent div, in this case the cs-content. That way we can place the button under the cs-wrapper on mobile, but bring it back under the header on tablet */
+            display: contents;
+        }
+
+        .cs-title {
+            margin: 0;
+            /* 16px - 32px */
+            margin-bottom: clamp(1rem, 3vw, 2rem);
+        }
+
+        .cs-wrapper {
+            max-width: calc(632/16 * 1rem);
+        }
+
+        .cs-text {
+            margin: 0 0 calc(32/16 * 1rem) 0;
+        }
+
+        .cs-button-solid {
+            font-size: calc(16/16 * 1rem);
+            font-weight: 700;
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-align: center;
+            text-decoration: none;
+            min-width: calc(150/16 * 1rem);
+            margin: 0;
+            margin-top: calc(32/16 * 1rem);
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            padding: 0 calc(24/16 * 1rem);
+            color: #fff;
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                content: "";
+                width: 0%;
+                height: 100%;
+                background: #000;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-button-solid {
+            margin: 0;
+            display: inline-block;
+            order: 2;
+        }
+
+        .cs-text {
+            max-width: calc(640/16 * 1rem);
+            margin-bottom: calc(24/16 * 1rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-ul {
+            max-width: calc(630/16 * 1rem);
+            margin: 0 0 calc(32/16 * 1rem) 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: calc(12/16 * 1rem);
+        }
+
+        .cs-li {
+            font-size: var(--bodyFontSize);
+            list-style: none;
+            line-height: 1.5em;
+            width: 100%;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: calc(8/16 * 1rem);
+        }
+
+        .cs-check-icon {
+            width: calc(24/16 * 1rem);
+            height: auto;
+            /* adds extra space between the icon and top of parent so it's more centered */
+            margin-top: 1px;
+            display: block;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-content-1792 {
+        .cs-content {
+            text-align: left;
+            max-width: calc(1280/16 * 1rem);
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: calc(48/16 * 1rem);
+            columns: 2;
+        }
+
+        .cs-flex-wrapper {
+            width: 40vw;
+            display: block;
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+
+        .cs-ul {
+            margin: 0;
+        }
+    }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #cs-content-1792 {
+        .cs-ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .cs-li {
+            width: 48%;
+        }
+    }
+}
+                                
+
                                 
 
 /*-- -------------------------- -->
@@ -3773,4 +3955,4 @@
         order: 3;
     }
 }
-                                
+      
