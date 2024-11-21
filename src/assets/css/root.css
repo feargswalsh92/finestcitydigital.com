@@ -437,7 +437,7 @@
     /* sends it to the right in the 3rd position */
     order: 3;
   }
-  #cs-navigation .cs-contact-group {
+  #cs-navigation .cs-1group {
     display: none;
     position: relative;
     z-index: 10;
