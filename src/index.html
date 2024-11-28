@@ -15,23 +15,7 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
-    <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -99,40 +83,6 @@ eleventyNavigation:
 </section>
 
 
-<!-- ============================================ -->
-<!--                   Services                   -->
-<!-- ============================================ -->
-
-<!-- <ul id="services-331">
-    <li class="cs-item">
-        <picture class="cs-icon-wrapper">
-            <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/support.svg" alt="icon" width="32" height="32" aria-hidden="true">
-        </picture>
-        <div class="cs-info-group">
-            <span class="cs-header">Web Development</span>
-            <span class="cs-desc">Custom Sites from $217/mo</span>
-        </div>
-    </li>
-    <li class="cs-item">
-        <picture class="cs-icon-wrapper">
-            <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/secure.svg" alt="icon" width="32" height="32" aria-hidden="true">
-        </picture>
-        <div class="cs-info-group">
-            <span class="cs-header">Consulting</span>
-            <span class="cs-desc">From Decent to Delightful</span>
-        </div>
-    </li>
-    <li class="cs-item">
-        <picture class="cs-icon-wrapper">
-            <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/clean.svg" alt="icon" width="32" height="32" aria-hidden="true">
-        </picture>
-        <div class="cs-info-group">
-            <span class="cs-header">Fractional CTO</span>
-            <span class="cs-desc">24/7 Problem Solving Support</span>
-        </div>
-    </li>
-</ul> -->
-
 
                                 
                             
@@ -178,7 +128,7 @@ eleventyNavigation:
                 Are you overwhelmed by technical jargon and want a partner who can break it all down?
             </p>
 
-            <p class="cs-text">
+            <p class="cs-text">le5
                     Finest City Digital works with founders like you—offering guidance, expertise, and a clear path to building software successfully offshore. We’re here to support you, explain every step, and avoid pitfalls that drain time and money.
                 </p>
             <a href="#contact-1879" class="cs-button-solid">Chat with Feargal</a>
@@ -214,30 +164,31 @@ eleventyNavigation:
         </div>
         <div class="cs-content">
             <span class="cs-topper">Let's Chat</span>
-            <h2 class="cs-title">About your business goals</h2>
+            <h2 class="cs-title">We're here to listen</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1879" name="Contact Form" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST" class="cs-form" id="cs-form-1879" name="Contact Form" method="post">
+                <input type="hidden" name="access_key" value="9e868037-40bd-4aa8-be71-27300d4328a2">
                 <label class="cs-label">
-                    First Name*
+                    First Name
                     <input class="cs-input" required type="text" id="name-1879" name="name" placeholder="John">
                 </label>
                 <label class="cs-label">
-                    Last Name*
-                    <input class="cs-input" required type="text" id="phone-1879" name="phone" placeholder="Moore">
+                    Last Name
+                    <input class="cs-input" required type="text" id="lastname-1879" name="surname" placeholder="Moore">
                 </label>
                 <label class="cs-label">
-                    Email*
+                    Email
                     <input class="cs-input" required type="text" id="email-1879" name="email" placeholder="name@company.com">
                 </label>
                 <label class="cs-label">
-                    Phone*
-                    <input class="cs-input" required type="text" id="hear-1879" name="heat" placeholder="+1 (206) 987-6543">
+                    Phone
+                    <input class="cs-input" required type="text" id="phone-1879" name="phone" placeholder="+1 (206) 987-6543">
                 </label>
                 <label class="cs-label cs-message">
-                    Message*
+                    Message
                     <textarea class="cs-input cs-textarea" required name="Message" id="message-1879" placeholder="Hello, I am interested..."></textarea>
                 </label>
-                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                <button type="submit" class="cs-button-solid cs-submit"">Send Message</button>
             </form>
         </div>
     </div>
