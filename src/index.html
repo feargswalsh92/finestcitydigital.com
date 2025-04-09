@@ -24,7 +24,6 @@ eleventyNavigation:
             "@type": "LocalBusiness",
             "name": "{{ client.name }}",
             {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
             {% if client.email %}"email": "{{ client.email }}",{% endif %}
             {% if client.address %}
                 "address": {
