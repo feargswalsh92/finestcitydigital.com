@@ -1,3 +1,22 @@
+/* Custom styles for the site */
 
+/* Reviews section - 2 per row on desktop */
+@media only screen and (min-width: 768px) {
+  #reviews-1537 .cs-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  #reviews-1537 .cs-item {
+    width: calc(50% - 1rem);
+    margin-bottom: 2rem;
+  }
+}
 
 /*# sourceMappingURL=local.css.map */
