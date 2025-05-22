@@ -3075,7 +3075,6 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 20px - 40px */
-    margin-bottom: clamp(1.25rem, 4vw, 2.5rem);
     color: var(--bodyTextColor);
     display: flex;
     justify-content: center;
