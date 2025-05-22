@@ -3069,24 +3069,19 @@
     line-height: 1.5em;
     margin: 0;
     /* 24px - 48px */
-    padding: clamp(2rem, 6vw, 3rem);
+    padding: clamp(1.5rem, 6vw, 3rem);
     height: 100%;
     min-height: 10rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 20px - 40px */
-    /* margin-bottom: clamp(1.25rem, 4vw, 2.5rem); */
+    margin-bottom: clamp(1.25rem, 4vw, 2.5rem);
     color: var(--bodyTextColor);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
-  }
-  #reviews-1537 .cs-link {
-    text-decoration: none;
-    color: var(--primary);
-    transition: color 0.3s;
   }
   #reviews-1537 .cs-svg {
     --svgBG: #F2FAF8;
@@ -3131,8 +3126,6 @@
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: 700;
-    max-width: 76%;
-    text-decoration: none;
     margin: 0;
     /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
     margin-top: auto;
