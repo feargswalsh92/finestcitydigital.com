@@ -1,0 +1,23 @@
+/* Custom styles for testimonials */
+
+/* Remove underline from cs-name when inside an anchor tag */
+a .cs-name {
+  text-decoration: none;
+}
+
+/* Adjust spacing and alignment for testimonial flex groups */
+#reviews-1537 .cs-flex-group {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 0.75rem;
+  padding-top: 0.5rem; /* Less spacing above */
+  padding-bottom: 1.5rem; /* More spacing below */
+}
+
+/* Ensure profile pictures are vertically aligned */
+#reviews-1537 .cs-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
