@@ -1,8 +1,16 @@
 /* Custom styles for testimonials */
 
 /* Remove underline from cs-name when inside an anchor tag */
-a .cs-name {
-  text-decoration: none;
+#reviews-1537 a,
+#reviews-1537 a:hover,
+#reviews-1537 a:visited,
+#reviews-1537 a:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+#reviews-1537 a .cs-name {
+  text-decoration: none !important;
 }
 
 /* Adjust spacing and alignment for testimonial flex groups */
