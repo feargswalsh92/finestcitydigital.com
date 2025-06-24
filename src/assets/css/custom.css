@@ -1,16 +1,14 @@
 /* Custom styles for testimonials */
 
 /* Remove underline from cs-name when inside an anchor tag */
-#reviews-1537 a,
-#reviews-1537 a:hover,
-#reviews-1537 a:visited,
-#reviews-1537 a:active {
-  text-decoration: none !important;
-  color: inherit;
+a .cs-name {
+  text-decoration: none;
 }
 
-#reviews-1537 a .cs-name {
-  text-decoration: none !important;
+/* Testimonial section background */
+#reviews-1537 {
+  background-color: #f7f7f7;
+  padding: 5rem 1rem;
 }
 
 /* Adjust spacing and alignment for testimonial flex groups */
@@ -28,4 +26,384 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Fractional CTO Services Section Styles */
+#fractional-cto {
+  padding: 5rem 1rem;
+  background-color: #f7f7f7;
+}
+
+#fractional-cto .cs-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#fractional-cto .cs-content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+#fractional-cto .cs-flex {
+  margin-bottom: 2.5rem;
+}
+
+#fractional-cto .cs-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--headerColor);
+}
+
+#fractional-cto .cs-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+#fractional-cto .cs-list li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+#fractional-cto .cs-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+/* Pricing Section Styles */
+#pricing {
+  padding: 5rem 1rem;
+  background-color: #fff;
+}
+
+#pricing .cs-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#pricing .cs-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#pricing .cs-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#pricing .cs-item {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+#pricing .cs-item:hover {
+  transform: translateY(-10px);
+}
+
+#pricing .cs-item-featured {
+  border-top: 5px solid var(--primary);
+  position: relative;
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+#pricing .cs-item-featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+#pricing .cs-package {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+#pricing .cs-price {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--headerColor);
+  margin-bottom: 0.25rem;
+}
+
+#pricing .cs-duration {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+#pricing .cs-h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--headerColor);
+}
+
+#pricing .cs-h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--headerColor);
+}
+
+#pricing .cs-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+#pricing .cs-li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+#pricing .cs-li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+#pricing .cs-button-solid {
+  width: 100%;
+  text-align: center;
+}
+
+#pricing .cs-bonus {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+  border: 1px dashed #ddd;
+}
+
+#pricing .cs-bonus-content {
+  padding: 1rem 0;
+}
+
+/* Fit & Objections Section Styles */
+#fit-objections {
+  padding: 5rem 1rem;
+  background-color: #f7f7f7;
+}
+
+#fit-objections .cs-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#fit-objections .cs-content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+#fit-objections .cs-flex {
+  margin-bottom: 2.5rem;
+}
+
+#fit-objections .cs-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--headerColor);
+}
+
+#fit-objections .cs-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+#fit-objections .cs-list li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+#fit-objections .cs-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+/* CTA Section Styles */
+#cta-fractional {
+  position: relative;
+  padding: 5rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+#cta-fractional .cs-container {
+  position: relative;
+  z-index: 1;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+#cta-fractional .cs-title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+#cta-fractional .cs-text {
+  color: #fff;
+  margin-bottom: 2rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cta-fractional .cs-button-solid {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+#cta-fractional .cs-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#cta-fractional .cs-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cta-fractional .cs-background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Newsletter Section Styles */
+#newsletter-1831 .cs-content {
+  text-align: center;
+  scroll-margin-top: 3.125rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.formkit-form[data-uid="762cfd8077"] {
+  max-width: 80rem !important;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  box-shadow: none !important;
+  background-color: #ffffff;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-container {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-header {
+  font-family: "Roboto", "Arial", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-content {
+  font-family: "Roboto", "Arial", sans-serif !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-hero-bg-color {
+  background-color: var(--primary) !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-submit {
+  background-color: var(--primary) !important;
+  border-radius: 0.25rem !important;
+  font-family: "Roboto", "Arial", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-input {
+  font-family: "Roboto", "Arial", sans-serif !important;
+  border-radius: 0.25rem !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-fields[data-stacked="false"] .formkit-submit {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.formkit-form[data-uid="762cfd8077"] .formkit-fields[data-stacked="false"] .formkit-field input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  #pricing .cs-card-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #pricing .cs-item {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  #pricing .cs-item-featured {
+    transform: scale(1);
+  }
+  
+  #pricing .cs-item-featured:hover {
+    transform: translateY(-10px);
+  }
+  
+  .formkit-form[data-uid="762cfd8077"] .formkit-fields[data-stacked="false"] {
+    flex-direction: column;
+  }
+  
+  .formkit-form[data-uid="762cfd8077"] .formkit-fields[data-stacked="false"] .formkit-field input {
+    border-radius: 0.25rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  .formkit-form[data-uid="762cfd8077"] .formkit-fields[data-stacked="false"] .formkit-submit {
+    border-radius: 0.25rem !important;
+  }
 }

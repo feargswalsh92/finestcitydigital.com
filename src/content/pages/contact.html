@@ -1,12 +1,11 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Contact | Finest City Digital | San Diego, CA'
+description: 'Get in touch with Finest City Digital for Fractional CTO services and tech consulting'
+preloadImg: '/assets/images/feargal-walsh-headshot.jpeg'
 permalink: 'contact/'
 eleventyNavigation:
-    key: Contact Us
+    key: Contact
     order: 600
-    hideOnDesktop: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -22,74 +21,63 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
+        <h1 id="home-h">Contact</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/san-diego-boardwalk-m.jpeg">
+            <source media="(min-width: 601px)" srcset="/assets/images/san-diego-boardwalk.jpeg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/san-diego-boardwalk.jpeg" alt="san diego boardwalk" loading="eager" width="2250" height="1500">
         </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--                Contact Form                  -->
+    <!--                   Contact                    -->
     <!-- ============================================ -->
 
-    <section id="cs-contact">
+    <section id="contact-1879">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/feargal-walsh-headshot.jpeg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/feargal-walsh-headshot.jpeg">
+                    <img loading="lazy" decoding="async" src="/assets/images/feargal-walsh-headshot.jpeg" alt="feargal-headshot" width="324" height="467">
                 </picture>
-
+                <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines.svg" alt="graphic" width="208" height="203" aria-hidden="true">
+                <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+                <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-blob.svg" alt="graphic" width="379" height="394" aria-hidden="true">
+                <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/leaf2.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+                <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-dots.svg" alt="graphic" width="187" height="104" aria-hidden="true">
+                <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-lines.svg" alt="graphic" width="189" height="208" aria-hidden="true">
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Let's Chat</span>
+                <h2 class="cs-title">We're here to listen</h2>
+                <!--Form-->
+                <form action="https://api.web3forms.com/submit" method="POST" class="cs-form" id="cs-form-1879" name="Contact Form">
+                    <input type="hidden" name="access_key" value="9e868037-40bd-4aa8-be71-27300d4328a2">
+                    <label class="cs-label">
+                        First Name
+                        <input class="cs-input" required type="text" id="name-1879" name="name" placeholder="John">
+                    </label>
+                    <label class="cs-label">
+                        Last Name
+                        <input class="cs-input" required type="text" id="lastname-1879" name="surname" placeholder="Moore">
+                    </label>
+                    <label class="cs-label">
+                        Email
+                        <input class="cs-input" required type="text" id="email-1879" name="email" placeholder="name@company.com">
+                    </label>
+                    <label class="cs-label">
+                        Phone
+                        <input class="cs-input" required type="text" id="phone-1879" name="phone" placeholder="+1 (206) 987-6543">
+                    </label>
+                    <label class="cs-label cs-message">
+                        Message
+                        <textarea class="cs-input cs-textarea" required name="Message" id="message-1879" placeholder="Hello, I am interested..."></textarea>
+                    </label>
+                    <button type="submit" class="cs-button-solid cs-submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
